@@ -8,8 +8,9 @@ from sklearn.linear_model import LogisticRegressionCV
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix
 
+
 # Load data
-breast_cancer_df = pd.read_csv('./breast_cancer_wisconsin.csv')
+breast_cancer_df = pd.read_csv('breast_cancer_wisconsin.csv')
 
 # Clean data
 breast_cancer_df.drop('Unnamed: 32', axis=1, inplace=True)
